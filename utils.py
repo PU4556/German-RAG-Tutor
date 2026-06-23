@@ -33,34 +33,19 @@ def clean_text(text):
     return text.strip()
 
 
-def chunk_text(text, max_words=90, overlap=2):
+import re
 
-    text = clean_text(text)
-
-    # split better: sentence + numbering + punctuation aware
-    sentences = re.split(r'(?<=[.!?])\s+|\s(?=\d+\.)', text)
+def chunk_text(text, chunk_size=5, overlap=2):
+    # Step 1: split into sentences
+    sentences = re.split(r'(?<=[.!?])\s+', text.strip())
 
     chunks = []
-    current_chunk = []
-    current_words = 0
+    i = 0
 
-    for sentence in sentences:
-        sentence = sentence.strip()
-        if not sentence:
-            continue
-
-        word_count = len(sentence.split())
-
-        if current_words + word_count > max_words:
-            chunks.append(" ".join(current_chunk))
-
-            current_chunk = current_chunk[-overlap:]
-            current_words = sum(len(s.split()) for s in current_chunk)
-
-        current_chunk.append(sentence)
-        current_words += word_count
-
-    if current_chunk:
-        chunks.append(" ".join(current_chunk))
+    # Step 2: build overlapping chunks
+    while i < len(sentences):
+        chunk = sentences[i:i + chunk_size]
+        chunks.append(" ".join(chunk))
+        i += chunk_size - overlap
 
     return chunks
