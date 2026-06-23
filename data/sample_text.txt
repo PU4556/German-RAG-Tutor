@@ -1,21 +1,204 @@
-German Grammar Basics:
+German Grammar Guide
 
-1. Sein vs Haben:
-"Sein" is used for states and movement.
-"Haben" is used for possession and most verbs.
+1. Sein vs Haben
 
-Example:
+The verbs "sein" and "haben" are two of the most important verbs in German. They are used both as main verbs and as auxiliary verbs.
+
+Sein is used for identity, profession, nationality, location, and states of being.
+
+Examples:
 Ich bin Student.
-Ich habe ein Buch.
+Du bist Lehrer.
+Er ist Arzt.
+Wir sind in Deutschland.
+Sie sind müde.
 
-2. Akkusativ:
-The accusative case is used for direct objects.
+Haben is used to express possession and ownership.
 
-Example:
+Examples:
+Ich habe ein Auto.
+Du hast einen Hund.
+Er hat ein Buch.
+Wir haben viel Zeit.
+Sie haben eine Wohnung.
+
+In the Perfekt tense, many verbs use either sein or haben as auxiliary verbs. Movement verbs usually use sein, while most other verbs use haben.
+
+Examples:
+Ich bin nach Berlin gefahren.
+Wir sind nach Hause gegangen.
+Ich habe Deutsch gelernt.
+Sie hat einen Brief geschrieben.
+
+2. Akkusativ
+
+The Akkusativ case is used for direct objects. It answers the question "Wen oder was?"
+
+Examples:
 Ich sehe den Mann.
+Sie kauft einen Apfel.
+Wir hören die Musik.
+Er liest das Buch.
+Ich brauche einen Computer.
 
-3. Modal Verbs:
-Modal verbs include können, müssen, wollen.
+Common Akkusativ articles:
 
-Example:
+der becomes den
+ein remains einen
+kein becomes keinen
+
+Examples:
+Ich sehe den Lehrer.
+Ich habe einen Hund.
+Sie kauft keinen Computer.
+
+3. Dativ
+
+The Dativ case is used for indirect objects. It answers the question "Wem?"
+
+Examples:
+Ich gebe dem Mann ein Buch.
+Sie hilft der Frau.
+Wir danken dem Lehrer.
+Er schreibt seinem Freund.
+Die Mutter gibt dem Kind ein Geschenk.
+
+Common Dativ articles:
+
+der becomes dem
+die becomes der
+das becomes dem
+
+Examples:
+Ich helfe dem Studenten.
+Sie gibt der Frau eine Blume.
+Wir danken dem Professor.
+
+4. Modal Verbs
+
+Modal verbs modify another verb and express ability, permission, necessity, or desire.
+
+Important modal verbs:
+
+können
+müssen
+dürfen
+wollen
+sollen
+mögen
+
+Examples:
 Ich kann Deutsch sprechen.
+Du musst lernen.
+Wir dürfen hier parken.
+Er will Arzt werden.
+Sie soll mehr schlafen.
+Ich mag Pizza.
+
+5. Perfekt Tense
+
+The Perfekt tense is commonly used in spoken German to talk about past actions.
+
+Structure:
+
+Subject + auxiliary verb + past participle
+
+Examples:
+Ich habe Deutsch gelernt.
+Sie hat einen Brief geschrieben.
+Wir haben Fußball gespielt.
+Er hat das Buch gelesen.
+
+Verbs of movement often use sein.
+
+Examples:
+Ich bin nach Berlin gefahren.
+Wir sind nach Hause gegangen.
+Sie ist früh angekommen.
+
+6. Word Order
+
+German word order follows strict rules.
+
+In normal statements:
+
+Subject + Verb + Object
+
+Examples:
+Ich lerne Deutsch.
+Sie kauft ein Buch.
+Wir besuchen Berlin.
+
+In yes/no questions:
+
+Verb + Subject + Object
+
+Examples:
+Lernst du Deutsch?
+Kauft sie ein Buch?
+Besucht ihr Berlin?
+
+With modal verbs:
+
+Subject + Modal Verb + Object + Main Verb
+
+Examples:
+Ich kann Deutsch sprechen.
+Wir wollen nach Berlin fahren.
+Sie muss heute arbeiten.
+
+7. Common German Vocabulary
+
+Family:
+Mutter = mother
+Vater = father
+Bruder = brother
+Schwester = sister
+
+Food:
+Brot = bread
+Milch = milk
+Wasser = water
+Apfel = apple
+
+Travel:
+Bahnhof = train station
+Flughafen = airport
+Hotel = hotel
+Ticket = ticket
+
+Education:
+Schule = school
+Universität = university
+Lehrer = teacher
+Student = student
+
+8. Everyday Conversation Examples
+
+At a café:
+
+Hallo, ich hätte gern einen Kaffee.
+Möchten Sie noch etwas?
+Ja, ein Stück Kuchen bitte.
+Das macht fünf Euro.
+
+At a train station:
+
+Wann fährt der Zug nach Berlin?
+Der Zug fährt um zehn Uhr.
+Von welchem Gleis?
+Von Gleis drei.
+
+Introducing yourself:
+
+Hallo, ich heiße Anna.
+Ich komme aus Deutschland.
+Ich bin Studentin.
+Ich lerne Informatik.
+
+Shopping:
+
+Wie viel kostet das?
+Das kostet zwanzig Euro.
+Kann ich mit Karte bezahlen?
+Ja, natürlich.

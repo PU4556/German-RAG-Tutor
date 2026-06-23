@@ -35,7 +35,6 @@ def clean_text(text):
 
 def chunk_text(text, max_words=90, overlap=2):
 
-    print("CHUNK FUNCTION CALLED")
     text = clean_text(text)
 
     # split better: sentence + numbering + punctuation aware
