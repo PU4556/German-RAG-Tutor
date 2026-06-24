@@ -35,17 +35,17 @@ def clean_text(text):
 
 import re
 
-def chunk_text(text, chunk_size=5, overlap=2):
-    # Step 1: split into sentences
-    sentences = re.split(r'(?<=[.!?])\s+', text.strip())
+def chunk_text(text):
+    pattern = r'(?=\n\d+\.\s)'
+
+    sections = re.split(pattern, text)
 
     chunks = []
-    i = 0
 
-    # Step 2: build overlapping chunks
-    while i < len(sentences):
-        chunk = sentences[i:i + chunk_size]
-        chunks.append(" ".join(chunk))
-        i += chunk_size - overlap
+    for section in sections:
+        section = section.strip()
+
+        if len(section) > 50:
+            chunks.append(section)
 
     return chunks
