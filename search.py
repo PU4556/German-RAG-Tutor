@@ -1,26 +1,47 @@
-import numpy as np
 import json
+import numpy as np
 from sentence_transformers import SentenceTransformer
 
-print("Loading model...")
-model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+print("Loading embedding model...")
+model = SentenceTransformer(
+    "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+)
 
-# Load stored data
-chunks = json.load(open("storage/chunks.json", "r", encoding="utf-8"))
+# -----------------------------
+# Load stored chunks & embeddings
+# -----------------------------
+with open("storage/chunks.json", "r", encoding="utf-8") as f:
+    chunks = json.load(f)
+
 embeddings = np.load("storage/embeddings.npy")
 
+# -----------------------------
+# User Query
+# -----------------------------
 query = input("Ask a question: ")
 
-query_emb = model.encode([query], normalize_embeddings=True)[0]
+query_embedding = model.encode(
+    [query],
+    normalize_embeddings=True
+)[0]
 
-scores = np.dot(embeddings, query_emb)
+# -----------------------------
+# Similarity Search
+# -----------------------------
+scores = np.dot(embeddings, query_embedding)
 
-top_k = 3
-top_idx = scores.argsort()[::-1][:top_k]
+best_index = np.argmax(scores)
+best_score = scores[best_index]
 
-print("\nTOP RESULTS:\n")
+THRESHOLD = 0.35
 
-for i in top_idx:
-    print("=" * 50)
-    print(chunks[i])
-    print("Score:", float(scores[i]))
+print("\n" + "=" * 60)
+
+if best_score < THRESHOLD:
+    print("No relevant information found.")
+else:
+    print("Most Relevant Chunk:\n")
+    print(chunks[best_index])
+    print(f"\nSimilarity Score: {best_score:.4f}")
+
+print("=" * 60)
