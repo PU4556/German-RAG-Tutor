@@ -1,6 +1,6 @@
-import utils
+import src.utils as utils
 
-from utils import load_text, chunk_text
+from src.utils import load_text, chunk_text
 
 # Load text
 text = load_text("data/sample_text.txt")

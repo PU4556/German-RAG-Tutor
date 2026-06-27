@@ -33,7 +33,10 @@ scores = np.dot(embeddings, query_embedding)
 best_index = np.argmax(scores)
 best_score = scores[best_index]
 
-THRESHOLD = 0.35
+THRESHOLD = 0.25
+print("\nDEBUG SCORES:")
+for i, s in enumerate(scores):
+    print(i, float(s))
 
 print("\n" + "=" * 60)
 

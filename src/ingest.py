@@ -2,7 +2,7 @@ import json
 import os
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from utils import load_text, chunk_text
+from src.utils import load_text, chunk_text
 
 print("Loading embedding model...")
 model = SentenceTransformer(
